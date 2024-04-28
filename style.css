@@ -1,0 +1,66 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-black: #1e1c1c ;
+    --main-blue: #a7d6dc;
+    --main-pink: #FFD1E3;
+    --main-dark:  #00008B;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: url(images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Anek Devanagari", sans-serif;
+}
+
+.head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 80px;
+    background-color: var(--main-blue);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    color: var(--main-dark);
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Architects Daughter", sans-serif;
+}
+
+.navbar>a {
+    font-size: 20px;
+    color: var(--main-white);
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 7px 20px;
+    border: 3px solid transparent;
+    border-radius: 25px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.09);
+}
+
+.navbar>a:hover {
+    color: var(--main-blue);
+    background-color: var(--main-white);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.18);
+    transform: translateY(-15px);
+}
+
+.navbar > a > .content {
+    background-color: var(--main-dark);
+}
