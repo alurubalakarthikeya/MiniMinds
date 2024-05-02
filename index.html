@@ -9,19 +9,34 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header class="head">
+        <header id="myNav" class="head overlay">
             <a href="#" class="logo">Mini <span style="color: #008000;">Minds</span></a>
-
-            <nav class="navbar">
+            <button class="menu-toggle"><i class="fas fa-bars" style="font-size: 2vh;"></i></button>
+            <nav class="navbar overlay-content">
                 <a href="#">Home</a>
                 <a href="#courses">Courses</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="contact">Contact</a>
+
             </nav>
         </header>
+        <section>
+            <h2 class="slogan fadeInUp-animation">Where Learning is made practical</h2><br>
+        </section>
+
+        <script>
+            // JavaScript to toggle the menu on mobile
+            document.addEventListener('DOMContentLoaded', function() {
+                const navToggle = document.querySelector('.navbar');
+                const menuToggle = document.querySelector('.menu-toggle');
+                menuToggle.addEventListener('click', function() {
+                    navToggle.classList.toggle('active');
+                });
+            });
+        </script>
     </body>
 </html>
