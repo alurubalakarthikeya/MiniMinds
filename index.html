@@ -11,22 +11,36 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
            <div class="cursor-dot" data-cursor-dot></div>
            <div class="cursor-outline" data-cursor-outline></div>
            <header id="myNav" class="head overlay">
-            <a href="#" class="logo">Mini <span style="color: #008000;">Minds</span></a>
-            <nav class="navbar overlay-content">
+            <nav class="sidebar">
+                <a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
                 <a href="#">Home</a>
                 <a href="#courses">Courses</a>
                 <a href="#about">About</a>
                 <a href="#contact" class="contact">Contact</a>
             </nav>
-        </header>
+            <a href="#" class="logo">Mini <span style="color: #008000;">Minds</span></a>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="contact">Contact</a>
+                <a class="menu" onclick=showSidebar()><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+            </nav>
+            </header>
         <div class="welcome-section">
             <h2 class="slogan fadeInUp-animation">Where Learning is made practical</h2><br>
         </div>
-        <script src="script.js"></script>
+        <script src="script.js">
+            function showSidebar(){
+                 const sidebar = document.querySelector('.sidebar')
+                 sidebar.style.diplay = "flex"
+            }
+        </script>
     </body>
 </html>
